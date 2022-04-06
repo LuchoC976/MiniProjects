@@ -34,7 +34,7 @@ def makeQR(url):
 	imgQR = qrcode.make(url)
 	imgQR.show()
 
-	# Save IMG chackbox **NOTE: Saving a new img will overwrite the last one**
+	# Save IMG checkbox **NOTE: Saving a new img will overwrite the last one**
 	if saveImg.get() == 1:
 		imgQR.save("MyQRCode")
 
